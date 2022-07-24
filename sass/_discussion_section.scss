@@ -1,0 +1,56 @@
+.discussion-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-color: red;
+  .dis-h {
+      padding: 0 6%;
+      background-color: brown;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   
+    &-desc {
+        padding:  15px 0;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        background-color: darkblue;
+     position: relative;
+        .h3::before , .h3::after{
+            content: "";
+            width: 200px ;
+            height: 2px;
+            margin:0 15px  ;
+            background: black;
+        }
+        .h3{      
+display: flex;
+align-items: center;
+ color: oldlace;
+        }
+        &-login {
+            position: absolute;
+            transform: translateY(deg(50%));
+            top: 50%;
+            right: 0;
+            // background-color: orange;
+            padding: 5px 5px;
+            color: white;
+            border-radius: 15px;
+            text-decoration: none;
+          
+        }
+      }
+      
+   
+      }
+
+    
+  }

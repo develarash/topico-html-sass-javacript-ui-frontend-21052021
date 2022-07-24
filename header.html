@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.min.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+  />
+    <title>Header</title>
+</head>
+<body>
+<header class="Header">
+    <div class="hd">
+    <!-- logo section  1-section -->
+    <div class="hd-logo">
+        <div class="hd-logo-title">
+            <h1>Tapico</h1>
+            <h6>What is your opinion?</h4>
+        </div>
+    </div>
+    <!-- navigation link 2-section -->
+    <div class="hd-navigation">
+        <ul class="hd-navigation-ul">
+            <a href=""><li><span>item1</span></li></a>
+            <a href=""><li><span>item1</span></li></a>
+            <a href=""><li><span>item1</span></li></a>
+            <a href=""><li><span>item1</span></li></a>
+
+        </ul>
+    </div>
+    <!-- Search Loging register 3-section -->
+    <div class="hd-search">
+        <ul class="hd-search-ul">
+            <a  href="#"><li class="fa fa-search search-icon"></li></a>
+            <a href="#"> <li>register</li></a>
+            <a href="#">   <li>login</li></a>
+        </ul>
+    </div>
+</div>
+<div class="search-section"></div>
+</header>
+    
+<script >
+    let searchIcon = document.querySelector(".search-icon");
+    let searchSection = document.querySelector(".search-section");
+searchIcon.onclick=function(){
+    searchSection.classList.toggle("active-search");
+}
+
+</script>
+</body>
+</html>

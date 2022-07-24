@@ -1,0 +1,90 @@
+
+.Login{
+    @media (max-width:770px) {
+        width: 75%;
+    }
+    border-radius: 10px;
+    margin-top: 50px;
+    width: 45%;
+    min-height: 70vh;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px ; 
+    padding-bottom: 100px;
+    overflow: hidden;
+    &-header{
+        margin-bottom: 10px;
+        h1{
+            text-align: center;
+            font-size: 32px;
+            margin-top: 85px;
+            color: $font_one_color;
+            font-family: sans-serif;
+            text-transform: uppercase;
+
+        }
+    }
+    &-inputs{
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        input{
+            margin-bottom: 30px;
+            width:70%;
+            outline: 1px  solid  $primery_color;
+            height: 32px;
+            border: none;
+            border-radius: 25px;
+            padding:0 10px ;  
+        }
+        input:focus{
+            outline: 2px  solid  $primery_color;
+
+        }
+        
+        .button{
+            outline: 1px  solid $primery_color;
+            margin-top: 10px;
+            background-color: $primery_color;
+            color: #fff;
+            border:none;
+            cursor: pointer;
+
+        }
+        .button:hover{
+            color: $second_color;       
+        }
+      
+    }
+    &-footer{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        ul{
+            list-style-type: none;
+            display: flex;
+            justify-content: space-between;
+            width: 70%;
+            @media (max-width:770px) {
+flex-wrap: wrap;    
+margin: 5px;     }
+            a{   
+
+               
+                text-decoration: none;
+                li{
+                    font-size: 20px;
+                }
+            }
+            a:hover{
+                color: $second_color;
+            }
+
+        }
+    }
+    
+}

@@ -1,0 +1,86 @@
+.Register{
+    @media (max-width:770px) {
+        width: 75%;
+    }
+    border-radius: 10px;
+    margin-top: 50px;
+    width: 45%;
+    min-height: 70vh;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px ; 
+    padding-bottom: 100px;
+    &-header{
+        h1{
+            font-size: 32px;
+            margin-top: 85px;
+            color: $font_one_color;
+            font-family: sans-serif;
+            text-transform: uppercase;
+    
+        }
+   
+}
+    &-inputs{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        margin-top: 40px;
+        align-items: center;
+        input{
+            width:70%;
+            margin-bottom: 20px;
+            outline: 1px  solid  $primery_color;
+            height: 32px;
+            border: none;
+            border-radius: 25px;
+            padding:0 10px ;  
+          
+        }
+        .button{
+            outline: 1px  solid $primery_color;
+            margin-top: 10px;
+            background-color: $primery_color;
+            color: #fff;
+            border:none;
+            cursor: pointer;
+        }
+        .button:hover{
+            color: $second_color;           
+        }
+    }
+    &-footer{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        &-condition{
+            font-family: sans-serif;
+            color: $primery_color;
+            font-size: 12px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            width:70%;
+            &-text{
+width: 100%;
+margin-bottom: 10px;
+            }
+            &-link{
+                color: $font_two_color;
+                text-decoration: none;
+                font-weight: 500;
+                width: auto;
+                font-size: 12px;
+            }
+            a:hover{
+                text-indent: 2px;
+                
+            }
+        }
+
+    }
+    
+}
